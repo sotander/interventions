@@ -5,7 +5,7 @@ from dbget import get_labeled_dialogues_ts01
 def main():
     conn = DB()
 
-    get_labeled_dialogues_ts01(conn, is_en=False)
+    get_labeled_dialogues_ts01(conn, is_en=True, ts=1)
 
     conn.close_connection()
 
